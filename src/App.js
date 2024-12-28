@@ -7,7 +7,7 @@ const url = "/react-tours-project";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [tours, setTours] = useState(null);
+  const [tours, setTours] = useState([]);
 
   const removeTour = (id) => {
     const newTours = tours.filter((tour) => tour.id !== id);
