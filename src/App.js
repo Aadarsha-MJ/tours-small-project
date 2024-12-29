@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import Tours from "./Tours";
 
-const url = "https://course-api.com/react-tours-project";
+// const url = "https://course-api.com/react-tours-project";
+const url = "/.netlify/functions/fetchTours"; // The function path
 
 function App() {
   const [loading, setLoading] = useState(true);
